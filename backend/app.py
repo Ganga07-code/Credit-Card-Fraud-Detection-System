@@ -473,12 +473,9 @@ def health():
     })
 
 
-if __name__ == "__main__":
+try:
     load_resources()
-
-    port = int(os.environ.get("PORT", 5000))
-
-    app.run(
-        host="0.0.0.0",
-        port=port
-    )
+    print("Resources loaded successfully.")
+except Exception as e:
+    print(f"Error loading resources: {e}")
+    raise
