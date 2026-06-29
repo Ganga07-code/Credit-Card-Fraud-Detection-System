@@ -3,7 +3,7 @@
    Handles Role-based Logic, API communication, and UI
    ═══════════════════════════════════════════════════════════ */
 
-const API_BASE = 'http://127.0.0.1:5000/api';
+const API_BASE = "/api";
 
 // ─── Chart.js Global Config ────────────────────────────────
 if (typeof Chart !== 'undefined') {
