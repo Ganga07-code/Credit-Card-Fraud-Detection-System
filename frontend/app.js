@@ -3,7 +3,10 @@
    Handles Role-based Logic, API communication, and UI
    ═══════════════════════════════════════════════════════════ */
 
-const API_BASE = "/api";
+const API_BASE =
+    window.location.hostname === "localhost"
+        ? "http://localhost:5000/api"
+        : "https://credit-card-fraud-api-prch.onrender.com/api";
 
 // ─── Chart.js Global Config ────────────────────────────────
 if (typeof Chart !== 'undefined') {
